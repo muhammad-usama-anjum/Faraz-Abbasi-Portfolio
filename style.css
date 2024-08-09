@@ -1,0 +1,424 @@
+/* Basic reset and styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Ensures z-index works properly */
+}
+
+.hero-content {
+  margin-top: 450px; 
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1; /* Ensures content is above the background image */
+}
+
+.hero-text {
+  font-size: 5rem;
+  margin-bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-subtext {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 50%;
+}
+
+.faraz{
+  width: 453px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 100px;
+
+
+}
+
+.hero-button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px; /* Adjust this value for more or less rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px; /* Adjust to create space between image and button */
+  margin-bottom: 20px;
+}
+
+.hero-button:hover {
+  animation: pulse 0.5s ease-in-out forwards;
+  background-color: #4aa9e9;
+}
+
+/* Projects section styles */
+.work-card {
+  background-color: rgb(10, 10, 10);
+  padding: 50px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.work-card h2{
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.work-card button{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px; /* Adjust this value for more or less rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.work-card button:hover{
+  animation: pulse 0.5s ease-in-out forwards;
+  background-color: #676a6d;
+}
+
+.projects {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 200px;
+  max-height: 400px;
+  min-height: 400px;
+  margin: 20px;
+  background-color: #1a1a1a;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 280px;
+  min-height: 260px;
+  border-radius: 5px;
+}
+
+.project-card:hover{
+  animation: pulse 0.5s ease-in-out forwards;
+  background-color: #4aa9e9;
+}
+
+/* About section styles */
+.about-card {
+  background-color: rgb(10, 10, 10);
+  padding: 50px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.about {
+  background-color: rgb(10, 10, 10);
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-column-gap: 4rem;
+  grid-row-gap: 16px;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.about-content-left, .about-content-right {
+  max-width: 600px;
+  margin: 10 auto;
+}
+
+.about-text {
+  font-weight: bolder;
+  font-size: 2.1rem;
+  line-height: 1.6;
+}
+
+.about-text-2 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Skills section styles */
+.skills-card {
+  background-color: rgb(10, 10, 10);
+  padding: 50px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 72px;
+  grid-row-gap: 44px;
+  align-items: center;
+  justify-items: start;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.skills-content-left, .skills-content-right {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-item {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  margin: 10px;
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: .5rem;
+  align-items: center;
+  padding: 1rem 2rem 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: flex;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+  animation: pulse 0.5s ease-in-out forwards;
+  background-color: #4aa9e9;
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.contact-card {
+  background-color: rgb(10, 10, 10);
+  padding: 50px;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.contact-card h2{
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contact-item{
+  text-align: center;
+  padding: 50px 0;
+  display: list-item;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.button{
+.button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px; /* Adjust this value for more or less rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+}
+
+.button:hover {
+  animation: pulse 0.5s ease-in-out forwards;
+  background-color: #4aa9e9;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .work-card h2, .contact-card h2 {
+      font-size: 3rem;
+  }
+
+  .hero-text {
+      font-size: 4rem;
+  }
+
+  .hero-subtext {
+      font-size: 2rem;
+  }
+
+  .hero-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .skills-text {
+      font-size: 2.5rem;
+  }
+
+  .about-text, .about-text-2 {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+      font-size: 3rem;
+  }
+
+  .hero-subtext {
+      font-size: 2rem;
+  }
+
+  .hero-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .work-card h2, .contact-card h2 {
+      font-size: 2rem;
+  }
+
+  .skills-text {
+      font-size: 1.5rem;
+  }
+
+  .about-text, .about-text-2 {
+      font-size: 1.5rem;
+  }
+
+  .project-card {
+      padding: 20px;
+  }
+
+  .skill-item {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+  }
+
+  .button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .hero-image {
+      width: 70px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+      font-size: 2rem;
+  }
+
+  .hero-subtext {
+      font-size: 1.5rem;
+  }
+
+  .hero-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .work-card h2, .contact-card h2 {
+      font-size: 1.5rem;
+  }
+
+  .skills-text {
+      font-size: 1.2rem;
+  }
+
+  .about-text, .about-text-2 {
+      font-size: 1.2rem;
+  }
+
+  .project-card {
+      padding: 10px;
+  }
+
+  .skill-item {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+  }
+
+  .button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .hero-image {
+      width: 50px; /* Adjust size as needed */
+  }
+}
